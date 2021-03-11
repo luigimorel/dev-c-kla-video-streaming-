@@ -12,4 +12,10 @@ router
 
 router.param("userId", userController.userByID);
 
+router.route("/api/users/:userId").get(userController.read);
+
+router.route("/api/users/:userId").put(userController.update);
+
+router.route("/api/users/:userId").delete(userController.remove);
+
 export default router;

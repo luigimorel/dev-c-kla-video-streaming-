@@ -4,10 +4,12 @@ import compress from "compression";
 import cors from "cors";
 import helmet from "helmet";
 import userRoutes from "./routes/user.routes";
+import authRoutes from "./routes/auth.routes";
 
 const app = express();
 
 app.use("/", userRoutes);
+app.use("/", authRoutes);
 
 app.use(express.json());
 app.use(express.urlencoded());
