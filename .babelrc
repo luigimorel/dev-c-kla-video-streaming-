@@ -9,7 +9,7 @@
       ],
       "@babel/preset-react"
     ],
-    "plugins": [
+    "plu9gins": [
       "react-hot-loader/babel"
     ]
 }

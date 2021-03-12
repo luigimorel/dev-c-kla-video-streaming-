@@ -73,8 +73,7 @@ const remove = async (req, res, next) => {
     deletedUser.salt = undefined;
     res.json(deletedUser);
   } catch (err) {
-      return res.status(400).json({
-        
+    return res.status(400).json({
       error: errorHandler.getErrorMessage(err),
     });
   }
